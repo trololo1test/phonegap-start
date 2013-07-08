@@ -16,7 +16,7 @@
 
 <body>
 
-<div id="fb-root"></div>
+<!--<div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
   FB.init({
@@ -83,8 +83,21 @@
 
   Learn more about options for the login button plugin:
   /docs/reference/plugins/login/ -->
-
-<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+<div id="fb-root"></div>
+<script type="text/<span class=">
+window.fbAsyncInit = function() {
+   FB.init({appId: '1386781351538301', status: true, cookie: true, xfbml: true});
+};
+(function() {
+   var e = document.createElement('script');
+   e.type = 'text/javascript';
+   e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+   e.async = true;
+   document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+<!--<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>-->
+<fb:login-button autologoutlink='true'  perms='email,user_birthday,status_update,publish_stream'></fb:login-button>
 
     
 <div data-role="page">
@@ -119,12 +132,6 @@
             </a>
         </li>
     </ul>
-<<<<<<< HEAD
-
-    
-
-=======
->>>>>>> 70e05267c333a785f928ab4856b111b84c57b801
 </div>
 
 
