@@ -13,6 +13,19 @@
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 
 </head> 
+<style>
+#button
+{
+	position: absolute;
+	padding-left: 85%;
+	padding-top:15px;
+	z-index: 100; 
+}
+.headlogo
+{
+	height: 40px;
+}
+</style>
 
 <body>
 
@@ -56,15 +69,17 @@
 	</script>
 
 
-<div data-role="page">
+<div data-role="page" id="bg">
+<div id="button"><img src="img/logo.png"></div>
+<div id="tipotipo"><img src="img/puntoverde.png"></div>
+<div data-role ="header" class="headlogo"></div>
 
-<div data-role ="header"><img src="img/logo.png"></div>
 
 <div data-role="content">
 <p> El sitio donde encontrarás las mejores opciones de proveedores con conciencia verde <p/>
-</div>
 
-<div data-role="footer"></div>
+
+<div data-role="footer" data-position="fixed">
 <div data-role="navbar" data-grid="c">
     <ul>
         <li><a href="perfil.html" class="ui-btn-active">Perfil</a></li>
@@ -74,9 +89,6 @@
     </ul>
 </div><!-- /navbar -->
 
-
-
-<div data-relo="container"></div>
 
 </div>
 </div>

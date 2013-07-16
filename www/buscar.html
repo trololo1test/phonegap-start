@@ -6,7 +6,7 @@
 <title>Punto Verde</title>
 <meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-<link rel="stylesheet" href="themes/1proposal.min.css" />
+<link rel="stylesheet" href="css/estilos.css" />
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-<div data-role="page">
-
-<div data-role ="header"><img src="img/logo.png"></div>
+<div data-role="page" id="bg">
+<div id="tipotipo"><img src="img/puntoverde.png"></div>
+<div data-role ="header" class="headlogo"><img src="img/logo.png"></div>
 
 <form>
      <label for="search-1">Search:</label>
@@ -26,7 +26,7 @@
 <div data-role="content">
 </div>
 
-<div data-role="footer"></div>
+<div data-role="footer" data-position="fixed">
 <div data-role="navbar" data-grid="c">
     <ul>
         <li><a href="perfil.html" class="ui-btn-active">Perfil</a></li>
