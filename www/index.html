@@ -14,16 +14,10 @@
 
 </head> 
 <style>
-#button
+
+#bg
 {
-	position: absolute;
-	padding-left: 85%;
-	padding-top:15px;
-	z-index: 100; 
-}
-.headlogo
-{
-	height: 40px;
+	background-image: url('img/indexbg.jpg');
 }
 </style>
 
@@ -71,13 +65,11 @@
 
 <div data-role="page" id="bg">
 <div id="button"><img src="img/logo.png"></div>
-<div id="tipotipo"><img src="img/puntoverde.png"></div>
-<div data-role ="header" class="headlogo"></div>
+<div id="tipotipo"></div>
+<div data-role ="header" class="headlogo" data-position="fixed"><img src="img/puntoverde.png"></div>
 
 
 <div data-role="content">
-<p> El sitio donde encontrarás las mejores opciones de proveedores con conciencia verde <p/>
-
 
 <div data-role="footer" data-position="fixed">
 <div data-role="navbar" data-grid="c">

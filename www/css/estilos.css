@@ -13,14 +13,30 @@
 /* Swatches */
 /* A
 -----------------------------------------------------------------------------------------------------------*/
-.headlogo{
-	text-align: right;
+#chan
+{
+	padding-top: 80px;
 }
+.ui-content {
+    padding: 0;
+}
+.headlogo{
+height: 40px;
+text-align: center;
+}
+
+#button
+{
+	position: fixed;
+	padding-left: 85%;
+	padding-top: -10px;
+	z-index: 100; 
+}
+
 #tipotipo
 {
 	position:absolute;
 	z-index: 30;
-	padding-top: 10px;
 	margin-left: 35%;
 	margin-right: 35%;
 }
